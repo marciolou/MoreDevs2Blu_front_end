@@ -22,10 +22,7 @@
         <h1>Cadastro de Funcionários</h1>
         <form action="">
             <div>
-                <input type="text" id="id" placeholder="ID">
-            </div>
-            <div>
-                <input type="text" id="nome_completo" placeholder="Nome Completo">
+                <input type="text" id="nome" placeholder="Nome Completo">
             </div>
             <div>
                 <input type="text" id="cargo" placeholder="Cargo">
@@ -33,9 +30,15 @@
             <div>
                 <input type="text" id="salario" placeholder="Salário">
             </div>
+            <div>
+                <input class="botoes salvar" id="salvar" type="submit"  value="Salvar">
+                <button class= "botoes cancelar" onclick="limpar(event)">Limpar</button>
+            </div>
         </form>
-        <img src="img/runes.jpg" alt="runes" title="Runes">
+        
     </main>
-    <footer>+Devs2Blu.ltda</footer>    
+    <footer>+Devs2Blu.ltda</footer>
+
+    <script src="js/script.js"></script>    
 </body>
 </html>
