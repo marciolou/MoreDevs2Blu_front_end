@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>Editar</title>
 </head>
 <body>
@@ -21,16 +23,17 @@
         <h1>Editar Funcionários</h1>
         <form action="">
             <div>
-                <input type="text" id="id" placeholder="ID">
+                <input type="text" class="campos" name="nome" placeholder="Nome Completo">
             </div>
             <div>
-                <input type="text" id="nome_completo" placeholder="Nome Completo">
+                <input type="text" class="campos" name="cargo" placeholder="Cargo">
             </div>
             <div>
-                <input type="text" id="cargo" placeholder="Cargo">
+                <input type="text" class="campos" name="salario" placeholder="Salário">
             </div>
             <div>
-                <input type="text" id="salario" placeholder="Salário">
+                <input class="botoes salvar" id="salvar" type="submit"  value="Salvar">
+                <button class= "botoes cancelar" onclick="limpar(event)">Limpar</button>
             </div>
         </form>
     </main>
